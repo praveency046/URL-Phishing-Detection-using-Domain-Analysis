@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    color: white;
+    background-image: linear-gradient(210deg, purple, blue);
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    letter-spacing: 8px;
+    text-transform: capitalize;
+    text-shadow: 2px 3px grey;
+    font-size: 60px;
+    margin: 20px auto;
+    font-family: "Chiller", sans-serif;
+}
+
+input[type=text] {
+    border: 4px solid grey;
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+input[type=submit] {
+    height: 40px;
+    width: 120px;
+    border: 4px solid grey;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    font-family: "Ink Free", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+}
+
+h1:hover, h2:hover, p:hover {
+    color: black;
+    transition: color 0.5s ease;
+}
+</style>
+<title>Phishing Detection</title>
+</head>
+<body>
+    <h1>Phishing Detection</h1>
+    <div id="input_form">
+        <form action="." method="post">
+            <input id="text_box" type="text" name="user_input" placeholder="Enter URL here">
+            <br>
+            <input id="button" type="submit" value="Check">
+        </form>
+    </div>
+    <div id="output_disp">
+        <h1>Result:</h1>
+        <h2>{{Result}}</h2>
+    </div>
+</body>
+</html>
