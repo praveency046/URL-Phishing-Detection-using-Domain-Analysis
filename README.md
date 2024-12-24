@@ -39,7 +39,7 @@ pip install flask requests
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/praveency041/url_phishing_detection.git
+git clone https://github.com/praveency046/url_phishing_detection.git
 ```
 
 2. Navigate to the project folder:
